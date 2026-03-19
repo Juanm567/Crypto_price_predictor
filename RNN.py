@@ -26,7 +26,7 @@ model = Sequential([
 #compile the model
 model.compile(optimizer = 'adam', loss = 'mse')                 #algorithm adam used to update weights, mse is used as a loss function to evaluate the performance of the model
 model.fit(new_x, new_y, epochs = 400)                           #(epoch)ammount of times to apply and evaluate the activator function 'reLU'
-x =(model.predict(np.array([[10,11,12]]).reshape(1,3,1)))       #array to preict and reshape to fit the model
+x =(model.predict(np.array([[7,8,9]]).reshape(1,3,1)))          #array to predict and reshape to fit the model
 print(int(x.item()))
 
 
