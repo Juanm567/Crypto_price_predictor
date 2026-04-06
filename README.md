@@ -20,4 +20,15 @@ A neural network-based cryptocurrency price prediction system that analyzes hist
   - Realized that having the result of (ppg + opponent allowed(ofpo))/2, as a feature in x[] to my model was useless since I would basically be showing the model what the pattern is instead of it deciphering the pattern from the data its given so it was just redundent and would make my model fall apart, therefore ive chosen to go with x[ppg,ofpo] and y [outcome]
   - Next ill probably continue cleaning data and reading more on activator functions as well as algorithms like adam and which are the best for this scenario
   - Ive also read up on monte carlo simulations which could also be very helpful in determining the accuracy of my models prediction
-
+# 4/6 - change of plans
+  - Class work and work kept me a little away from the project but it got me thinking that we need a comparison to compare all other models too, after a little research I came across the Log5 formula popularized by Bill james which calculates the probability of team A winning over team B, there are other implications of the formula but for now we are only going to use the formula for winning probability this will all be in "models/Baseline.py"
+  - In addition I also researched more on how to structure data to pass on to an RNN and realize i might have to include more historical data from each team, for now i think we will use a teams total ppg and ppga and y is the outcome of team a vs teamb so, x input data will look like
+    - x = [team a ppg, team a ppga, team b ppg, team b ppga] and y = [winner betweem team a and team b, winner team c and d]
+    - the winner will  be represented by a bit 0 meaning a loss and 1 meaning a win
+    - Some reference info can be found in "models/Rinfo" folder
+  - Log5 formula reference from https://jorgepit-14189.medium.com/predict-basketball-games-with-log5-formula-2aa04c6bee9b
+  - As the reference mentions we must account for home/away/total win rate to use the formula without leaving any metric unweighted so data we need is 
+    - Home record
+    - away record 
+    - If possible home and away win rate if finable in nba-api or we must scrape and calculate manually
+    - total win rate which may be found using the nba-api "LeagueStandings" endpoint
