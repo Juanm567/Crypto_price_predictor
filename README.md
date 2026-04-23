@@ -1,5 +1,5 @@
-# Crypto_price_predictor
-A neural network-based cryptocurrency price prediction system that analyzes historical market data to forecast short-term price movements. The model leverages time-series architectures such as LSTMs and feedforward networks, incorporates engineered technical indicators, and evaluates predictive accuracy through backtesting simulations.
+# Optima
+Research type project that uses an LSTM , Probabilistic , and other models popular in sports predictions to predict nba games, predicted out comes are then graphed and compared to analyze which model is the best to use. This model is a stepping stone to a hopefully price predicting model plus its many other additional aplications
 # 3/15  
   - Wrote my first RNN python script to predict 4th element in a sequence
   - more familiar with activator functions 'relu','tanh','sigmoid' and weigth calculating algorithms like adam
