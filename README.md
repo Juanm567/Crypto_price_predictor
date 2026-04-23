@@ -32,3 +32,5 @@ Research type project that uses an LSTM , Probabilistic , and other models popul
     - away record 
     - If possible home and away win rate if finable in nba-api or we must scrape and calculate manually
     - total win rate which may be found using the nba-api "LeagueStandings" endpoint
+# 4/23 (Mistakes)
+  - Having issues with the way that the python interpreter recognized a file in a different folder as a module
